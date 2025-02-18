@@ -1,5 +1,23 @@
 # @backstage/plugin-auth-node
 
+## 0.6.0
+
+### Minor Changes
+
+- 61f464e: Added `auth.providers.<providerId>.sessionDuration` config for auth providers to allow the lifespan of user sessions to be configured.
+
+### Patch Changes
+
+- 8699b79: Removed unused dependencies
+- ab9a6fb: Added `scopeAlreadyGranted` property to `OAuthAuthenticatorRefreshInput`, signaling to the provider whether the requested scope has already been granted when persisting session scope.
+- Updated dependencies
+  - @backstage/backend-plugin-api@1.2.0
+  - @backstage/catalog-client@1.9.1
+  - @backstage/catalog-model@1.7.3
+  - @backstage/config@1.3.2
+  - @backstage/errors@1.2.7
+  - @backstage/types@1.2.1
+
 ## 0.6.0-next.2
 
 ### Patch Changes
